@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Enhancer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-light">
+  <div class="container py-5">
+    <h1 class="text-center">🖼️ Advanced Image Enhancer</h1>
+    <form action="/" method="POST" enctype="multipart/form-data" class="my-4 text-center">
+      <input type="file" name="image" class="form-control mb-3" required>
+      <select name="method" class="form-select mb-3" required>
+        <option value="esrgan">Super Resolution (ESRGAN)</option>
+        <option value="denoise">Denoising Autoencoder</option>
+        <option value="clahe">CLAHE + Contrast Enhancement</option>
+      </select>
+      <button type="submit" class="btn btn-primary">Enhance Image</button>
+    </form>
+
+    {% if input_img %}
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h5>Original</h5>
+        <img src="{{ input_img }}" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h5>Enhanced</h5>
+        <img src="{{ output_img }}" class="img-fluid">
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</body>
+</html>
