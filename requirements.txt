@@ -1,9 +1,23 @@
-flask 
-opencv-python 
-pillow 
-numpy 
-tensorflow 
-keras
+# Flask framework
+Flask==2.3.3
 
-# torch 
-# torchvision
+# Image processing
+opencv-python
+Pillow
+numpy
+scikit-image
+scikit-learn
+matplotlib
+
+# Deep Learning
+torch>=2.0
+torchvision
+
+# For super-resolution and enhancement
+basicsr
+facexlib
+gfpgan
+
+# Utility
+tqdm
+requests
