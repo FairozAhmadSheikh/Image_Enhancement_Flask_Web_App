@@ -37,7 +37,7 @@ This project is a **Flask-based web application** for enhancing low-quality imag
 ### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/your-username/image-enhancer-app.git
+git clone https://github.com/FairozAhmadSheikh/Image_Enhancement_Flask_Web_App
 cd image-enhancer-app
 ```
 ### Step 2: Create and activate a virtual environment
